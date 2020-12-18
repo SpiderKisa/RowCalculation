@@ -11,8 +11,6 @@ int main(int argc, char **argv) {
     run_experiments_for(element_count, cpp_accumulate_false_sharing);
     printf("==Alignment==\n");
     run_experiments_for(element_count, cpp_accumulate_aligned);
-//    printf("==Atomic==\n"); don't work
-//    run_experiments_for(element_count, cpp_accumulate_atomic);
     printf("==Critical==\n");
     run_experiments_for(element_count, cpp_accumulate_mutex);
     printf("==Reduction (static)==\n");
